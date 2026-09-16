@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Paola Guedes Estética Avançada – Especialista em rejuvenescimento facial e tratamentos estéticos de alto padrão. Agende sua consulta." />
+  <meta name="theme-color" content="#1a1008" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Paola Guedes | Estética Avançada" />
+  <meta property="og:description"
+    content="A sutil arte de refinar sua expressão natural. Tratamentos estéticos de alta performance com resultados que revelam a melhor versão de você." />
+  <meta property="og:type" content="website" />
+
+  <!-- Tipografia Premium: Cormorant Garamond (display) + Jost (corpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <title>Paola Guedes | Estética Avançada</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ── ESTILOS DAS LEGENDAS DO CARROSSEL ── -->
+  <style>
+    .carousel-item {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 48px 16px 16px;
+      background: linear-gradient(to top, rgba(15, 8, 2, 0.92) 60%, transparent);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .carousel-caption-tag {
+      display: inline-block;
+      width: fit-content;
+      background: rgba(192, 138, 38, 0.25);
+      color: #f0c060;
+      border: 0.5px solid rgba(192, 138, 38, 0.5);
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .carousel-caption-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: #f5e8cc;
+      line-height: 1.3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAV – Fixo, transparente no topo, opaco ao rolar
+  ============================================================ -->
+  <header class="site-header" role="banner">
+    <nav class="nav-container" aria-label="Navegação principal">
+
+      <!-- Logo SVG inline para máxima qualidade e controle de cor -->
+      <a href="#hero" class="nav-logo" aria-label="Paola Guedes Estética Avançada – Ir para o início">
+        <!-- Monograma PG recriado via SVG inspirado na logo enviada -->
+        <svg class="logo-mark" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="goldGrad" x1="0" y1="0" x2="60" y2="80" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#f0c060" />
+              <stop offset="50%" stop-color="#c9922a" />
+              <stop offset="100%" stop-color="#f5d78e" />
+            </linearGradient>
+          </defs>
+          <!-- Haste vertical do P -->
+          <rect x="14" y="4" width="4" height="44" rx="2" fill="url(#goldGrad)" />
+          <!-- Arco superior do P -->
+          <path d="M18 4 Q42 4 42 22 Q42 40 18 40" stroke="url(#goldGrad)" stroke-width="4" fill="none"
+            stroke-linecap="round" />
+          <!-- Arco inferior do G -->
+          <path d="M30 40 Q8 40 8 60 Q8 78 30 78 Q50 78 50 62 L50 56 L36 56" stroke="url(#goldGrad)" stroke-width="4"
+            fill="none" stroke-linecap="round" />
+          <!-- Bolinha central -->
+          <circle cx="30" cy="44" r="3.5" fill="url(#goldGrad)" />
+        </svg>
+
+        <span class="logo-text" aria-label="Paola Guedes Estética Avançada">
+          <span class="logo-name">Paola Guedes</span>
+          <span class="logo-tagline">Estética Avançada</span>
+        </span>
+      </a>
+
+      <!-- Links de navegação -->
+      <ul class="nav-links" role="list">
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#tratamentos" class="nav-link">Tratamentos</a></li>
+        <li><a href="#resultados" class="nav-link">Resultados</a></li>
+        <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+
+      <!-- CTA no Nav -->
+      <a href="#agendar" class="btn btn--nav" aria-label="Agendar consulta com Paola Guedes">
+        Agendar Consulta
+      </a>
+
+      <!-- Hamburguer Mobile -->
+      <button class="nav-hamburger" aria-label="Abrir menu de navegação" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+
+    <!-- Menu Mobile (oculto por padrão) -->
+    <div id="mobile-menu" class="mobile-menu" role="dialog" aria-label="Menu de navegação mobile" hidden>
+      <ul role="list">
+        <li><a href="#sobre" class="mobile-nav-link">Sobre</a></li>
+        <li><a href="#tratamentos" class="mobile-nav-link">Tratamentos</a></li>
+        <li><a href="#resultados" class="mobile-nav-link">Resultados</a></li>
+        <li><a href="#diferenciais" class="mobile-nav-link">Diferenciais</a></li>
+        <li><a href="#contato" class="mobile-nav-link">Contato</a></li>
+        <li>
+          <a href="#agendar" class="btn btn--primary" aria-label="Agendar consulta">
+            Agendar Consulta
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         SEÇÃO 1 – HERO
+    ============================================================ -->
+    <section id="hero" class="premium-section section--hero" aria-label="Apresentação – Paola Guedes Estética Avançada">
+      <!-- Nome decorativo tipográfico vertical (background) -->
+      <div class="hero-bg-name" aria-hidden="true">
+        <span>PAOLA</span>
+        <span>GUEDES</span>
+      </div>
+
+      <!-- Conteúdo principal do hero -->
+      <div class="hero-content">
+        <div class="hero-text">
+          <!-- Assinatura manuscrita (simulada via fonte cursiva) -->
+          <p class="hero-signature" aria-hidden="true">Paola Guedes</p>
+
+          <h1 class="hero-heading">
+            A Sutil Arte de<br />
+            <em>Refinar sua<br />Expressão Natural</em>
+          </h1>
+
+          <p class="hero-subheading">
+            Tratamentos estéticos de alta performance que revelam<br />
+            a beleza autêntica que sempre existiu em você.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#agendar" class="btn btn--primary" aria-label="Quero agendar minha consulta com Paola Guedes">
+              Quero Agendar Minha Consulta
+            </a>
+
+            <a href="#tratamentos" class="btn btn--ghost" aria-label="Conhecer os tratamentos disponíveis">
+              Conhecer os Tratamentos
+            </a>
+          </div>
+        </div>
+
+        <!-- Foto da especialista -->
+        <div class="hero-image-wrap">
+          <figure class="hero-image" role="img" aria-label="Foto de Paola Guedes, especialista em estética avançada">
+            <div class="hero-image-placeholder" aria-hidden="true">
+              <img src="dra.jpg" alt="Paola Guedes, especialista em estética avançada, em seu consultório" width="560"
+                height="720" loading="eager" fetchpriority="high" />
+            </div>
+          </figure>
+
+          <!-- Card flutuante – Social proof -->
+          <div class="hero-floating-card" aria-label="Avaliação dos clientes">
+            <div class="floating-card-icon" aria-hidden="true">★★★★★</div>
+            <div class="floating-card-text">
+              <strong>+500 clientes</strong>
+              <span>transformados com excelência</span>
+            </div>
+          </div>
+
+          <!-- Badge circular rotativo -->
+          <div class="hero-badge" aria-label="Paola Guedes – Estética Avançada" role="img">
+            <svg viewBox="0 0 120 120" class="badge-svg" aria-hidden="true">
+              <defs>
+                <path id="circlePath" d="M 60,60 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
+              </defs>
+              <text font-size="10" fill="currentColor" letter-spacing="3.5">
+                <textPath href="#circlePath">PAOLA GUEDES • ESTÉTICA AVANÇADA •</textPath>
+              </text>
+            </svg>
+            <span class="badge-center-icon" aria-hidden="true">✦</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seta de scroll para baixo -->
+      <a href="#por-que" class="hero-scroll-cue" aria-label="Rolar para a próxima seção">
+        <svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24">
+          <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" fill="none" />
+        </svg>
+      </a>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 2 – POR QUE CUIDAR DA PELE COM PAOLA GUEDES?
+    ============================================================ -->
+    <section id="por-que" class="premium-section section--why"
+      aria-label="Por que escolher a Paola Guedes para cuidar da sua pele">
+      <div class="container">
+        <div class="section-header section-header--centered">
+          <span class="section-label" aria-hidden="true">Nossa Filosofia</span>
+          <h2 class="section-title">
+            Por Que Cuidar da Sua Pele<br />
+            <em>com Paola Guedes?</em>
+          </h2>
+        </div>
+
+        <div class="why-body">
+          <p class="why-intro">
+            Cuidar da pele vai além da estética — é um ato de autoconhecimento e valorização
+            pessoal que impacta sua confiança em cada fase da vida.
+          </p>
+          <p class="why-detail">
+            Paola Guedes oferece uma abordagem profundamente personalizada e cientificamente
+            embasada, combinando as tecnologias mais avançadas do mercado com um olhar
+            artístico único. Cada protocolo é desenhado para realçar sua beleza genuína,
+            com resultados duradouros e naturais que respeitam sua individualidade.
+          </p>
+        </div>
+
+        <!-- Indicador de scroll para baixo -->
+        <div class="why-scroll-indicator" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="32" height="32">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1" fill="none" />
+            <path d="M8 11l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 3 – NOSSOS TRATAMENTOS (Carrossel + Grid)
+    ============================================================ -->
+    <section id="tratamentos" class="premium-section section--treatments" aria-label="Nossos Tratamentos">
+      <!-- Sub-bloco 3a: Carrossel de Imagens -->
+      <div class="treatments-top">
+        <div class="treatments-top-text">
+          <span class="section-label">Especialidades</span>
+          <h2 class="section-title">
+            Nossos<br /><strong>Tratamentos</strong>
+          </h2>
+          <p class="treatments-description">
+            Entre em contato hoje mesmo e venha conquistar sua melhor forma com
+            protocolos exclusivos desenvolvidos para o seu tipo de pele.
+          </p>
+          <a href="#agendar" class="btn btn--primary" aria-label="Agendar consulta para tratamentos estéticos">
+            Agendar Sua Consulta
+          </a>
+        </div>
+
+        <!-- Carrossel infinito de imagens de tratamentos -->
+        <div class="treatments-carousel-wrap" aria-label="Galeria de tratamentos" role="region">
+          <div class="infinite-carousel-slider" aria-label="Carrossel de imagens de tratamentos">
+
+            <figure class="carousel-item" aria-label="Harmonização Facial">
+              <img src="harmonização.png" alt="Especialista realizando harmonização facial" width="280" height="360"
+                loading="lazy" />
+              <figcaption class="carousel-caption">
+                <span class="carousel-caption-tag">Facial</span>
+                <span class="carousel-caption-name">Harmonização Facial</span>
+              </figcaption>
+            </figure>
+
+            <figure class="carousel-item" aria-label="Preenchimento Labial">
+              <img src="labial.png" alt="Procedimento de preenchimento labial" width="280" height="360"
+                loading="lazy" />
+              <figcaption class="carousel-caption">
+                <span class="carousel-caption-tag">Labial</span>
+                <span class="carousel-caption-name">Preenchimento Labial</span>
+              </figcaption>
+            </figure>
+
+            <figure class="carousel-item" aria-label="Microagulhamento facial">
+              <img src="microagulhamento.png" alt="Procedimento de microagulhamento para rejuvenescimento facial"
+                width="280" height="360" loading="lazy" />
+              <figcaption class="carousel-caption">
+                <span class="carousel-caption-tag">Facial</span>
+                <span class="carousel-caption-name">Microagulhamento</span>
+              </figcaption>
+            </figure>
+
+            <figure class="carousel-item" aria-label="Radiofrequência corporal">
+              <img src="radiofrequencia.png" alt="Aplicação de radiofrequência para firmeza corporal" width="280"
+                height="360" loading="lazy" />
+              <figcaption class="carousel-caption">
+                <span class="carousel-caption-tag">Corporal</span>
+                <span class="carousel-caption-name">Radiofrequência</span>
+              </figcaption>
+            </figure>
+
+            <figure class="carousel-item" aria-label="Peeling químico facial">
+              <img src="peelingquímico.png" alt="Peeling químico para renovação celular e uniformização do tom"
+                width="280" height="360" loading="lazy" />
+              <figcaption class="carousel-caption">
+                <span class="carousel-caption-tag">Facial</span>
+                <span class="carousel-caption-name">Peeling Químico</span>
+              </figcaption>
+            </figure>
+
+            <figure class="carousel-item" aria-label="Bioestimulador de colágeno">
+              <img src="bioestimuladordecolageno.png" alt="Aplicação de bioestimulador de colágeno para pele mais firme"
+                width="280" height="360" loading="lazy" />
+              <figcaption class="carousel-caption">
+                <span class="carousel-caption-tag">Facial</span>
+                <span class="carousel-caption-name">Bioestimulador de Colágeno</span>
+              </figcaption>
+            </figure>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sub-bloco 3b: Grid de Cards de Tratamentos -->
+      <div class="treatments-grid-wrap">
+        <div class="container">
+          <div class="section-header section-header--centered">
+            <span class="section-label" aria-hidden="true">Portfólio de Serviços</span>
+            <h3 class="section-title">
+              Tratamentos<br /><strong>Disponíveis</strong>
+            </h3>
+          </div>
+
+          <!-- Carrossel de cards em mobile, grid em desktop -->
+          <div class="treatments-cards-slider" role="region" aria-label="Lista de tratamentos disponíveis">
+
+            <article class="treatment-card" aria-label="Bioestimuladores de Colágeno">
+              <div class="treatment-card-icon" aria-hidden="true">✦</div>
+              <h4 class="treatment-card-title">Bioestimuladores de Colágeno</h4>
+              <p class="treatment-card-desc">
+                Estimula a produção natural de colágeno com fillers avançados de última geração,
+                para uma pele mais firme, elástica e radiante.
+              </p>
+            </article>
+
+            <article class="treatment-card" aria-label="Fios de PDO">
+              <div class="treatment-card-icon" aria-hidden="true">✦</div>
+              <h4 class="treatment-card-title">Fios de PDO</h4>
+              <p class="treatment-card-desc">
+                Reposiciona tecidos e estimula o colágeno com técnica minimamente invasiva,
+                entregando um lifting natural e duradouro.
+              </p>
+            </article>
+
+            <article class="treatment-card" aria-label="Microagulhamento">
+              <div class="treatment-card-icon" aria-hidden="true">✦</div>
+              <h4 class="treatment-card-title">Microagulhamento</h4>
+              <p class="treatment-card-desc">
+                Melhora textura e tônus da pele, reduzindo cicatrizes e manchas para uma
+                aparência uniforme e luminosa de forma progressiva.
+              </p>
+            </article>
+
+            <article class="treatment-card" aria-label="Peelings Químicos">
+              <div class="treatment-card-icon" aria-hidden="true">✦</div>
+              <h4 class="treatment-card-title">Peelings Químicos</h4>
+              <p class="treatment-card-desc">
+                Tratamentos de renovação celular profunda para uma pele mais clara,
+                uniforme e visivelmente rejuvenescida.
+              </p>
+            </article>
+
+            <article class="treatment-card" aria-label="Radiofrequência Facial">
+              <div class="treatment-card-icon" aria-hidden="true">✦</div>
+              <h4 class="treatment-card-title">Radiofrequência Facial</h4>
+              <p class="treatment-card-desc">
+                Tecnologia de ondas que aquece as camadas profundas da pele,
+                promovendo firmeza e contorno facial redefinido.
+              </p>
+            </article>
+
+            <article class="treatment-card" aria-label="Limpeza de Pele Profunda">
+              <div class="treatment-card-icon" aria-hidden="true">✦</div>
+              <h4 class="treatment-card-title">Limpeza de Pele Profunda</h4>
+              <p class="treatment-card-desc">
+                Protocolo purificante e nutritivo que desobstrui poros e equilibra o
+                microbioma cutâneo para uma saúde dérmica duradoura.
+              </p>
+            </article>
+
+          </div>
+
+          <!-- Dots de paginação (mobile) -->
+          <div class="slider-dots" role="tablist" aria-label="Navegar pelos tratamentos">
+            <button class="slider-dot slider-dot--active" role="tab" aria-selected="true"
+              aria-label="Tratamento 1"></button>
+            <button class="slider-dot" role="tab" aria-selected="false" aria-label="Tratamento 2"></button>
+            <button class="slider-dot" role="tab" aria-selected="false" aria-label="Tratamento 3"></button>
+            <button class="slider-dot" role="tab" aria-selected="false" aria-label="Tratamento 4"></button>
+            <button class="slider-dot" role="tab" aria-selected="false" aria-label="Tratamento 5"></button>
+            <button class="slider-dot" role="tab" aria-selected="false" aria-label="Tratamento 6"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 4 – RESULTADOS (Antes e Depois)
+    ============================================================ -->
+    <section id="resultados" class="premium-section section--results"
+      aria-label="Resultados – Antes e Depois dos Tratamentos">
+      <div class="container">
+        <div class="section-header section-header--centered">
+          <span class="section-label" aria-hidden="true">Transformações Reais</span>
+          <h2 class="section-title">
+            Resultados que<br /><em>Falam por Si</em>
+          </h2>
+          <p class="section-subtitle">
+            Cada transformação é única — assim como você.
+            Conheça alguns dos resultados alcançados com nossos protocolos exclusivos.
+          </p>
+        </div>
+
+        <!-- Grid de comparadores -->
+        <div class="results-grid">
+
+          <!-- Comparador 1 – Microagulhamento -->
+          <div class="image-comparison-slider" role="img" aria-label="Comparação antes e depois de microagulhamento">
+            <!-- TAG DO PROCEDIMENTO -->
+            <div class="result-procedure-tag" aria-label="Procedimento: Microagulhamento">
+              <span class="result-procedure-tag__icon" aria-hidden="true"></span>
+              Microagulhamento
+            </div>
+
+            <div class="img-before" aria-hidden="true">
+              <img src="antes1.png" alt="Antes do microagulhamento" width="480" height="600" loading="lazy" />
+              <span class="comparison-label comparison-label--before">Antes</span>
+            </div>
+            <div class="img-after" aria-hidden="true">
+              <img src="depois1.png" alt="Depois do microagulhamento" width="480" height="600" loading="lazy" />
+              <span class="comparison-label comparison-label--after">Depois</span>
+            </div>
+            <div class="slider-handle" role="slider" aria-label="Arraste para comparar antes e depois" aria-valuemin="0"
+              aria-valuemax="100" aria-valuenow="50" tabindex="0">
+              <div class="slider-handle-line"></div>
+              <div class="slider-handle-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <path d="M10 16l-6 0M22 16l6 0M8 13l-4 3 4 3M24 13l4 3-4 3" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" fill="none" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Comparador 2 – Preenchimento Labial -->
+          <div class="image-comparison-slider" role="img"
+            aria-label="Comparação antes e depois de preenchimento labial">
+            <div class="result-procedure-tag" aria-label="Procedimento: Preenchimento Labial">
+              <span class="result-procedure-tag__icon" aria-hidden="true"></span>
+              Preenchimento Labial
+            </div>
+
+            <div class="img-before" aria-hidden="true">
+              <img src="antes2.png" alt="Antes do preenchimento labial" width="480" height="600" loading="lazy" />
+              <span class="comparison-label comparison-label--before">Antes</span>
+            </div>
+            <div class="img-after" aria-hidden="true">
+              <img src="depois2.png" alt="Depois do preenchimento labial" width="480" height="600" loading="lazy" />
+              <span class="comparison-label comparison-label--after">Depois</span>
+            </div>
+            <div class="slider-handle" role="slider"
+              aria-label="Arraste para comparar antes e depois do preenchimento labial" aria-valuemin="0"
+              aria-valuemax="100" aria-valuenow="50" tabindex="0">
+              <div class="slider-handle-line"></div>
+              <div class="slider-handle-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <path d="M10 16l-6 0M22 16l6 0M8 13l-4 3 4 3M24 13l4 3-4 3" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" fill="none" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Comparador 3 – Radiofrequência Facial -->
+          <div class="image-comparison-slider" role="img"
+            aria-label="Comparação antes e depois de radiofrequência facial">
+            <div class="result-procedure-tag" aria-label="Procedimento: Radiofrequência Facial">
+              <span class="result-procedure-tag__icon" aria-hidden="true"></span>
+              Radiofrequência Facial
+            </div>
+
+            <div class="img-before" aria-hidden="true">
+              <img src="antes3.png" alt="Antes da radiofrequência facial" width="480" height="600"
+                loading="lazy" />
+              <span class="comparison-label comparison-label--before">Antes</span>
+            </div>
+            <div class="img-after" aria-hidden="true">
+              <img src="depois3.png" alt="Depois da radiofrequência facial" width="480" height="600"
+                loading="lazy" />
+              <span class="comparison-label comparison-label--after">Depois</span>
+            </div>
+            <div class="slider-handle" role="slider"
+              aria-label="Arraste para comparar antes e depois da radiofrequência" aria-valuemin="0" aria-valuemax="100"
+              aria-valuenow="50" tabindex="0">
+              <div class="slider-handle-line"></div>
+              <div class="slider-handle-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <path d="M10 16l-6 0M22 16l6 0M8 13l-4 3 4 3M24 13l4 3-4 3" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" fill="none" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 5 – CONHEÇA A PAOLA GUEDES (Bio)
+    ============================================================ -->
+    <section id="sobre" class="premium-section section--about"
+      aria-label="Conheça Paola Guedes – Especialista em Estética Avançada">
+      <!-- Nome decorativo ao fundo -->
+      <div class="about-bg-name" aria-hidden="true">PG</div>
+
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Coluna: Foto -->
+          <div class="about-image-col">
+            <figure class="about-image-wrap" aria-label="Fotografia profissional de Paola Guedes">
+              <img src="dra.jpg" alt="Paola Guedes, especialista em estética avançada, posando em ambiente sofisticado"
+                width="520" height="680" loading="lazy" />
+            </figure>
+          </div>
+
+          <!-- Coluna: Texto Bio -->
+          <div class="about-text-col">
+            <span class="section-label">Conheça a Especialista</span>
+            <h2 class="section-title">
+              Conheça a<br /><strong>Paola Guedes</strong>
+            </h2>
+            <h3 class="about-subtitle">
+              Sua Especialista em<br />Rejuvenescimento e Estética de Alto Padrão
+            </h3>
+            <p class="about-bio">
+              Especialista em estética avançada com formação sólida e vasta experiência
+              em tratamentos de alta complexidade, Paola Guedes construiu uma reputação
+              de excelência reconhecida por sua capacidade ímpar de unir ciência e arte.
+            </p>
+            <p class="about-bio">
+              Cada atendimento é uma experiência cuidadosamente orquestrada — do diagnóstico
+              à execução — onde cada detalhe é pensado para realçar a beleza genuína de cada
+              cliente, proporcionando resultados que transcendem o estético e impactam a
+              autoestima de forma duradoura.
+            </p>
+
+            <!-- Métricas de credibilidade -->
+            <div class="about-stats" role="list" aria-label="Números e conquistas">
+              <div class="about-stat" role="listitem">
+                <strong class="stat-number">+500</strong>
+                <span class="stat-label">Clientes Atendidas</span>
+              </div>
+              <div class="about-stat" role="listitem">
+                <strong class="stat-number">8+</strong>
+                <span class="stat-label">Anos de Experiência</span>
+              </div>
+              <div class="about-stat" role="listitem">
+                <strong class="stat-number">15+</strong>
+                <span class="stat-label">Protocolos Exclusivos</span>
+              </div>
+            </div>
+
+            <a href="#agendar" class="btn btn--primary" aria-label="Agendar consulta com Paola Guedes">
+              Agende Sua Consulta
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 6 – POR QUE ESCOLHER A PAOLA GUEDES? (Diferenciais)
+    ============================================================ -->
+    <section id="diferenciais" class="premium-section section--differentials"
+      aria-label="Diferenciais – Por que escolher Paola Guedes">
+      <div class="container">
+        <div class="section-header section-header--centered">
+          <span class="section-label" aria-hidden="true">Nossa Excelência</span>
+          <h2 class="section-title">
+            Por Que Escolher<br /><em>a Paola Guedes?</em>
+          </h2>
+          <p class="section-subtitle">Diferenciais que Elevam sua Experiência</p>
+        </div>
+
+        <!-- Grid 2x2 de cards de diferenciais -->
+        <div class="differentials-grid" role="list" aria-label="Diferenciais da clínica Paola Guedes">
+
+          <article class="differential-card" role="listitem" aria-label="Experiência e Especialização">
+            <div class="differential-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="40" height="40" fill="none">
+                <rect x="4" y="8" width="32" height="24" rx="3" stroke="currentColor" stroke-width="1.5" />
+                <path d="M12 16h16M12 20h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <circle cx="28" cy="30" r="5" stroke="currentColor" stroke-width="1.5" />
+                <path d="M25 35l3-3 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="differential-card-title">Experiência e Especialização</h3>
+            <p class="differential-card-desc">
+              Paola Guedes é especialista em estética avançada com ampla experiência em
+              rejuvenescimento e protocolos de alta performance, garantindo segurança e
+              resultados superiores em cada procedimento.
+            </p>
+          </article>
+
+          <article class="differential-card" role="listitem" aria-label="Tecnologia de Ponta">
+            <div class="differential-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="40" height="40" fill="none">
+                <path d="M20 6v4M20 30v4M6 20h4M30 20h4" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="20" cy="20" r="3" fill="currentColor" />
+              </svg>
+            </div>
+            <h3 class="differential-card-title">Tecnologia de Ponta</h3>
+            <p class="differential-card-desc">
+              Utilizamos os equipamentos e insumos mais avançados do mercado estético para
+              garantir máxima eficácia, segurança clínica e conforto em todos os tratamentos.
+            </p>
+          </article>
+
+          <article class="differential-card" role="listitem" aria-label="Atendimento Personalizado">
+            <div class="differential-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="40" height="40" fill="none">
+                <circle cx="20" cy="13" r="6" stroke="currentColor" stroke-width="1.5" />
+                <path d="M8 34c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path d="M28 22l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="differential-card-title">Atendimento Personalizado</h3>
+            <p class="differential-card-desc">
+              Cada cliente é única e recebe um protocolo de tratamento exclusivo,
+              cuidadosamente elaborado para suas necessidades específicas, garantindo
+              resultados alinhados com suas expectativas.
+            </p>
+          </article>
+
+          <article class="differential-card" role="listitem" aria-label="Ambiente Sofisticado e Aconchegante">
+            <div class="differential-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="40" height="40" fill="none">
+                <path d="M6 30V16l14-8 14 8v14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <rect x="15" y="22" width="10" height="8" rx="1" stroke="currentColor" stroke-width="1.5" />
+                <path d="M20 18v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="differential-card-title">Ambiente Sofisticado</h3>
+            <p class="differential-card-desc">
+              Um espaço criado com requinte e acolhimento para que você relaxe completamente,
+              se sinta verdadeiramente cuidada e viva uma experiência de autocuidado inesquecível.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- CTA final dos diferenciais -->
+        <div class="differentials-cta">
+          <a href="#agendar" class="btn btn--primary" aria-label="Agendar minha consulta com Paola Guedes">
+            Agende Sua Consulta
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 7 – DEPOIMENTOS (Prova Social)
+    ============================================================ -->
+    <section id="depoimentos" class="premium-section section--testimonials"
+      aria-label="Depoimentos de clientes da Paola Guedes">
+      <div class="container">
+        <div class="section-header section-header--centered">
+          <span class="section-label" aria-hidden="true">Histórias Reais</span>
+          <h2 class="section-title">
+            O Que Nossas<br /><em>Clientes Dizem</em>
+          </h2>
+        </div>
+
+        <div class="testimonials-grid" role="list" aria-label="Depoimentos de clientes">
+
+          <blockquote class="testimonial-card" role="listitem" cite="#" aria-label="Depoimento de Ana Paula">
+            <div class="testimonial-stars" aria-label="Avaliação 5 estrelas" role="img">★★★★★</div>
+            <p class="testimonial-text">
+              "A Paola tem um talento único para entender exatamente o que você precisa.
+              Após o protocolo de bioestimulador, minha pele ficou completamente transformada —
+              firme, luminosa e natural. Me sinto 10 anos mais jovem!"
+            </p>
+            <footer class="testimonial-author">
+              <cite>Ana Paula M., 42 anos</cite>
+              <span class="testimonial-treatment">Bioestimulador de Colágeno</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card" role="listitem" cite="#" aria-label="Depoimento de Fernanda">
+            <div class="testimonial-stars" aria-label="Avaliação 5 estrelas" role="img">★★★★★</div>
+            <p class="testimonial-text">
+              "Fiz o microagulhamento e fiquei impressionada com a diferença nas manchas e
+              na textura da pele. O atendimento é impecável, o ambiente é lindo e a Paola
+              transmite uma confiança incrível. Recomendo de olhos fechados!"
+            </p>
+            <footer class="testimonial-author">
+              <cite>Fernanda L., 35 anos</cite>
+              <span class="testimonial-treatment">Microagulhamento Facial</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card" role="listitem" cite="#" aria-label="Depoimento de Carla">
+            <div class="testimonial-stars" aria-label="Avaliação 5 estrelas" role="img">★★★★★</div>
+            <p class="testimonial-text">
+              "Nunca me senti tão bem comigo mesma. O peeling químico mudou completamente
+              minha autoestima. A Paola é extremamente profissional e atenciosa.
+              Cada visita é uma experiência de luxo e cuidado genuíno."
+            </p>
+            <footer class="testimonial-author">
+              <cite>Carla S., 38 anos</cite>
+              <span class="testimonial-treatment">Peeling Químico</span>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 8 – FORMULÁRIO DE AGENDAMENTO (CTA Principal)
+    ============================================================ -->
+    <section id="agendar" class="premium-section section--booking" aria-label="Agendar consulta com Paola Guedes">
+      <div class="container">
+        <div class="booking-grid">
+
+          <!-- Coluna Esquerda: Copy de conversão -->
+          <div class="booking-copy">
+            <span class="section-label">Seu Momento é Agora</span>
+            <h2 class="section-title">
+              Inicie Sua<br /><em>Transformação Hoje</em>
+            </h2>
+            <p class="booking-description">
+              Dê o primeiro passo para a melhor versão de você. Agende sua
+              consulta de avaliação com a Paola Guedes e descubra o protocolo
+              ideal para a sua pele.
+            </p>
+
+            <!-- Elementos de confiança -->
+            <ul class="booking-trust-list" role="list" aria-label="Garantias de atendimento">
+              <li class="booking-trust-item" role="listitem">
+                <span class="trust-icon" aria-hidden="true">✓</span>
+                Avaliação personalizada e sem compromisso
+              </li>
+              <li class="booking-trust-item" role="listitem">
+                <span class="trust-icon" aria-hidden="true">✓</span>
+                Protocolo exclusivo desenvolvido para o seu tipo de pele
+              </li>
+              <li class="booking-trust-item" role="listitem">
+                <span class="trust-icon" aria-hidden="true">✓</span>
+                Ambiente premium e atendimento humanizado
+              </li>
+              <li class="booking-trust-item" role="listitem">
+                <span class="trust-icon" aria-hidden="true">✓</span>
+                Resultados naturais e duradouros garantidos
+              </li>
+            </ul>
+          </div>
+
+          <!-- Coluna Direita: Formulário de Contato -->
+          <div class="booking-form-wrap">
+            <div class="booking-form-card" role="form" aria-label="Formulário de agendamento de consulta">
+              <h3 class="form-card-title">Agende Sua Consulta</h3>
+              <p class="form-card-subtitle">Preencha abaixo ou fale conosco pelo WhatsApp</p>
+
+              <div class="form-group">
+                <label for="input-nome" class="form-label">Seu nome completo</label>
+                <input type="text" id="input-nome" name="nome" class="form-input" placeholder="Como podemos te chamar?"
+                  autocomplete="name" required aria-required="true" />
+              </div>
+
+              <div class="form-group">
+                <label for="input-telefone" class="form-label">WhatsApp / Telefone</label>
+                <input type="tel" id="input-telefone" name="telefone" class="form-input" placeholder="(00) 00000-0000"
+                  autocomplete="tel" required aria-required="true" />
+              </div>
+
+              <div class="form-group">
+                <label for="input-tratamento" class="form-label">Tratamento de interesse</label>
+                <select id="input-tratamento" name="tratamento" class="form-input form-select"
+                  aria-label="Selecione o tratamento de seu interesse">
+                  <option value="" disabled selected>Selecione um tratamento</option>
+                  <option value="bioestimulador">Bioestimulador de Colágeno</option>
+                  <option value="fios-pdo">Fios de PDO</option>
+                  <option value="microagulhamento">Microagulhamento</option>
+                  <option value="peeling">Peeling Químico</option>
+                  <option value="radiofrequencia">Radiofrequência Facial</option>
+                  <option value="limpeza">Limpeza de Pele Profunda</option>
+                  <option value="outro">Ainda não sei / Quero uma avaliação</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="input-mensagem" class="form-label">Mensagem (opcional)</label>
+                <textarea id="input-mensagem" name="mensagem" class="form-input form-textarea"
+                  placeholder="Conte um pouco sobre sua principal preocupação com a pele..." rows="3"
+                  aria-label="Campo de mensagem opcional"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full"
+                aria-label="Enviar solicitação de agendamento de consulta">
+                Quero Agendar Minha Consulta
+              </button>
+
+              <!-- Alternativa WhatsApp -->
+              <a href="https://wa.me/5513991540145?text=Olá%2C%20Paola!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20avaliação."
+                class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer"
+                aria-label="Falar com Paola Guedes pelo WhatsApp para agendar consulta">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                </svg>
+                Falar pelo WhatsApp
+              </a>
+
+              <p class="form-privacy-note" aria-live="polite">
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M8 1a3 3 0 00-3 3v1H3a1 1 0 00-1 1v7a1 1 0 001 1h10a1 1 0 001-1V6a1 1 0 00-1-1h-2V4a3 3 0 00-3-3zm-2 4V4a2 2 0 114 0v1H6z" />
+                </svg>
+                Seus dados estão seguros. Não fazemos spam.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 9 – LOCALIZAÇÃO
+    ============================================================ -->
+    <section id="contato" class="premium-section section--location"
+      aria-label="Localização da Clínica Paola Guedes Estética Avançada">
+      <div class="container">
+        <div class="section-header section-header--centered">
+          <span class="section-label" aria-hidden="true">Nos Encontre</span>
+          <h2 class="section-title">Localização</h2>
+        </div>
+
+        <div class="location-grid">
+
+          <!-- Informações de contato -->
+          <address class="location-info" aria-label="Informações de contato e endereço da clínica">
+            <div class="location-detail">
+              <div class="location-detail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div>
+                <strong>Endereço</strong>
+                <p>Rua Mário Tamashiro, 47 – <br />Canto do Forte, Praia Grande – SP<br />CEP 11700-180</p>
+              </div>
+            </div>
+
+            <div class="location-detail">
+              <div class="location-detail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div>
+                <strong>Telefone / WhatsApp</strong>
+                <p>
+                  <a href="tel:+5513991540145" aria-label="Ligar para Paola Guedes">(13) 99154-0145</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="location-detail">
+              <div class="location-detail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div>
+                <strong>Horário de Atendimento</strong>
+                <p>Segunda a Sexta: 9h às 20h<br />Sábado: 9h às 18h</p>
+              </div>
+            </div>
+
+            <!-- Links Redes Sociais -->
+            <div class="location-social" aria-label="Redes sociais de Paola Guedes">
+              <a href="https://www.instagram.com/clinicapaolaguedes/" target="_blank" rel="noopener noreferrer"
+                class="social-link" aria-label="Instagram da Paola Guedes Estética Avançada">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+                @clinicapaolaguedes
+              </a>
+            </div>
+          </address>
+
+          <!-- Mapa (iframe do Google Maps) -->
+          <div class="location-map" aria-label="Mapa de localização da Clínica Paola Guedes">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.6853264526135!2d-46.40980882500418!3d-24.006886578110553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1d7cdbe5ca09%3A0xe54535dc2f98675e!2sCl%C3%ADnica%20Est%C3%A9tica%20Dra.%20Paola%20Guedes!5e0!3m2!1spt-BR!2sbr!4v1780353135877!5m2!1spt-BR!2sbr"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização da Clínica Paola Guedes Estética Avançada no Google Maps"
+              aria-label="Mapa interativo com a localização da clínica"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo" aria-label="Rodapé – Paola Guedes Estética Avançada">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Coluna: Logo + tagline -->
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo" aria-label="Paola Guedes Estética Avançada – Voltar ao início">
+            <span class="logo-name">Paola Guedes</span>
+            <span class="logo-tagline">Estética Avançada</span>
+          </a>
+          <p class="footer-tagline">
+            A sutil arte de refinar<br />sua expressão natural.
+          </p>
+        </div>
+
+        <!-- Coluna: Links rápidos -->
+        <nav class="footer-nav" aria-label="Links rápidos do rodapé">
+          <h4 class="footer-nav-title">Navegação</h4>
+          <ul role="list">
+            <li><a href="#sobre" class="footer-link">Sobre a Paola</a></li>
+            <li><a href="#tratamentos" class="footer-link">Tratamentos</a></li>
+            <li><a href="#resultados" class="footer-link">Resultados</a></li>
+            <li><a href="#diferenciais" class="footer-link">Diferenciais</a></li>
+            <li><a href="#agendar" class="footer-link">Agendar Consulta</a></li>
+          </ul>
+        </nav>
+
+        <!-- Coluna: Tratamentos -->
+        <nav class="footer-nav" aria-label="Lista de tratamentos no rodapé">
+          <h4 class="footer-nav-title">Tratamentos</h4>
+          <ul role="list">
+            <li><a href="#tratamentos" class="footer-link">Bioestimulador de Colágeno</a></li>
+            <li><a href="#tratamentos" class="footer-link">Fios de PDO</a></li>
+            <li><a href="#tratamentos" class="footer-link">Microagulhamento</a></li>
+            <li><a href="#tratamentos" class="footer-link">Peelings Químicos</a></li>
+            <li><a href="#tratamentos" class="footer-link">Radiofrequência Facial</a></li>
+          </ul>
+        </nav>
+
+        <!-- Coluna: Contato -->
+        <div class="footer-contact">
+          <h4 class="footer-nav-title">Contato</h4>
+          <p>
+            <a href="tel:+5513991540145" class="footer-link" aria-label="Ligar para a clínica">(13) 99154-0145</a>
+          </p>
+          <p>
+            <a href="https://wa.me/5513991540145" target="_blank" rel="noopener noreferrer" class="footer-link"
+              aria-label="Falar pelo WhatsApp">WhatsApp</a>
+          </p>
+          <p>
+            <a href="https://instagram.com/clinicapaolaguedes" target="_blank" rel="noopener noreferrer"
+              class="footer-link" aria-label="Instagram da clínica">@clinicapaolaguedes</a>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="footer-year"></span> Paola Guedes Estética Avançada.
+          Todos os direitos reservados.
+        </p>
+        <p class="footer-credit" aria-label="Créditos do desenvolvimento">
+          Desenvolvido com excelência por
+          <a href="https://www.instagram.com/fluxy.studio/" class="footer-link" aria-label="Agência responsável pelo desenvolvimento">@fluxystudio</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>
