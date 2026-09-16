@@ -2830,15 +2830,27 @@ MOBILE — ATÉ 768px
   }
 
   .about-grid {
-    width: 100%;
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr !important;
+  gap: 2.5rem;
+}
 
-  .about-image-col {
-    width: min(78vw, 340px);
-    max-width: 100%;
-  }
+.about-image-col,
+.about-text-col {
+  grid-column: 1 !important;
+  width: 100%;
+  max-width: 100%;
+}
+
+.about-image-col {
+  width: min(78vw, 340px);
+  margin-inline: auto;
+}
+
+.about-text-col {
+  text-align: center;
+}
 
   .about-image-wrap {
     width: 100%;
